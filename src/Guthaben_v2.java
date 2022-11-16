@@ -2,6 +2,7 @@ import javax.management.monitor.GaugeMonitor;
 import java.util.Scanner;
 
 public class Guthaben_v2 {
+
     public static void main(String[] args) {
         Scanner eingabe = new Scanner(System.in);
         double guthaben = 2000.00;
