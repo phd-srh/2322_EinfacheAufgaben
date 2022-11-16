@@ -59,8 +59,25 @@ public class Guthaben_v2 {
                     }
                     break;
                 case 3:
+                    System.out.println("Welches Kreditlimit möchten Sie denn haben?");
+                    betrag = eingabe.nextDouble();
+                    if (betrag <= guthaben/2) {
+                        System.out.println("Das Kreditlimit von " + betrag +
+                                " EUR wird Ihnen gewährt");
+                        kreditlimit = betrag;
+                    }
+                    else {
+                        System.out.println("Sorry, dieses Kreditlimit kann Ihnen" +
+                                " nicht gewährt werden");
+                    }
+                    break;
                 case 4:
-                    System.out.println("Diese Funktion ist noch nicht implementiert!");
+                    if (guthaben < 0) {
+                        betrag = guthaben * überzugszinsen * (-1);
+                        System.out.println("Überzugszinsen in Höhe von " +
+                                betrag + " EUR werden verrechnet");
+                        guthaben = guthaben - betrag;
+                    }
                     break;
                 case 5:
                     break Hauptschleife;
