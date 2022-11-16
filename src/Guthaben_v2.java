@@ -64,7 +64,10 @@ public class Guthaben_v2 {
                     break;
                 case 5:
                     break Hauptschleife;
+                default:
+                    System.out.println("Ungültige Auswahl, bitte nochmal probieren.");
             }
+            System.out.println();
         }
         System.out.println("Vielen Dank und Auf Wiedersehen!");
     }
